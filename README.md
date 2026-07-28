@@ -1,12 +1,16 @@
-# 👁️‍🗨️ AutoEncoder Lab - Premium Denoising & Reconstruction Web App
+# Intelligent Web Apps Journey 🚀
+
+Welcome to my journey of exploring artificial intelligence and modern web development through practical projects. This repository contains a collection of intelligent web applications created for learning, experimentation, and implementation of AI/ML concepts.
+
+---
+
+## 👁️‍🗨️ Featured Project: AutoEncoder Lab (Premium Denoising & Reconstruction)
 
 AutoEncoder Lab is a production-ready, interactive Deep Learning web application designed to demonstrate image compression and noise reduction using a convolutional autoencoder model trained on the MNIST handwritten digit dataset. 
 
 Built around the exact model architecture specified in `AutoEncoders_DL.ipynb`, the application is split into a **React 18 frontend** and a **Flask backend API**. It features custom canvas drawing inputs, real-time comparisons, before/after slider layers, metric calculations, and an interactive 2D latent space mapping viewer.
 
----
-
-## 🚀 Key Features
+### 🚀 Key Features
 
 *   **Handwriting Canvas:** Draw a digit with brush/eraser sizing and full undo/redo capabilities. Downsamples drawings automatically to 28x28 grayscale tensors.
 *   **Drag & Drop Upload:** Browse or drop PNG/JPG/JPEG digit images for instant inference.
@@ -17,7 +21,7 @@ Built around the exact model architecture specified in `AutoEncoders_DL.ipynb`, 
 
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 
 ```
 AutoEncoder-WebApp/
@@ -56,14 +60,14 @@ AutoEncoder-WebApp/
 
 ---
 
-## 💻 Running Locally
+### 💻 Running Locally
 
-### 1. Prerequisites
+#### 1. Prerequisites
 Ensure you have the following installed:
 *   Python 3.8 or higher
 *   Node.js & NPM (for compiling the React app locally)
 
-### 2. Backend Setup
+#### 2. Backend Setup
 1. Open a terminal in the project directory.
 2. Install Python dependencies:
    ```bash
@@ -80,7 +84,7 @@ Ensure you have the following installed:
    ```
    The backend will run on `http://localhost:5000`.
 
-### 3. Frontend Setup
+#### 3. Frontend Setup
 1. Open a new terminal in the `frontend` subdirectory:
    ```bash
    cd frontend
@@ -97,9 +101,9 @@ Ensure you have the following installed:
 
 ---
 
-## 🌐 Production Deployment
+### 🌐 Production Deployment
 
-### Frontend (Netlify)
+#### Frontend (Netlify)
 The project is configured for deployment to Netlify using the `netlify.toml` file in the root. 
 1. Push this project to GitHub.
 2. Create a new site on Netlify and link your GitHub repository.
@@ -108,7 +112,7 @@ The project is configured for deployment to Netlify using the `netlify.toml` fil
    *   **Publish directory:** `frontend/dist`
 4. Set the environment variable `VITE_API_URL` to point to your live backend server API.
 
-### Backend (Python Server)
+#### Backend (Python Server)
 Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
 1. Ensure the backend environment has `tensorflow`, `flask`, `flask-cors`, `numpy`, `pillow`, and `opencv-python`.
 2. Run the app using a production WSGI server like `gunicorn` (Linux):
@@ -118,9 +122,9 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
 
 ---
 
-## 🔌 API Documentation
+### 🔌 API Documentation
 
-### 1. Healthcheck
+#### 1. Healthcheck
 *   **URL:** `GET /health`
 *   **Response:**
     ```json
@@ -131,7 +135,7 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
     }
     ```
 
-### 2. Full Autoencoder Inference
+#### 2. Full Autoencoder Inference
 *   **URL:** `POST /predict`
 *   **Request Body:** `{"image": "data:image/png;base64,..."}`
 *   **Response:**
@@ -146,7 +150,7 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
     }
     ```
 
-### 3. Encoder (Fetch Latent Vector)
+#### 3. Encoder (Fetch Latent Vector)
 *   **URL:** `POST /encode`
 *   **Request Body:** `{"image": "data:image/png;base64,..."}`
 *   **Response:**
@@ -157,7 +161,7 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
     }
     ```
 
-### 4. Decoder (Reconstruct from Latent Representation)
+#### 4. Decoder (Reconstruct from Latent Representation)
 *   **URL:** `POST /decode`
 *   **Request Body:** `{"latent_vector": [...]}`
 *   **Response:**
@@ -169,7 +173,14 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
 
 ---
 
-## 🛠️ Troubleshooting
+### 🛠️ Troubleshooting
 
 *   **API Offline indicator in Navbar:** Ensure your Flask server is running locally on port 5000. If you changed the port, update the address in `frontend/src/services/api.js` or define `VITE_API_URL` in a `.env` file.
 *   **Black/inverted reconstructions:** Ensure you draw inside the canvas using the brush tool (which draws with white strokes on a black background). Drawing black lines on a white canvas causes bad inputs.
+
+---
+
+## 🎯 Purpose of Journey
+
+The goal of this repository is to understand AI concepts, improve software development skills, and transform machine learning ideas into interactive web experiences.
+
