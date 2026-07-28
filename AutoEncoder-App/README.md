@@ -6,7 +6,7 @@ Welcome to my journey of exploring artificial intelligence and modern web develo
 
 ## Live Demo
 
-https://your-netlify-url.netlify.app
+[https://your-netlify-url.netlify.app](https://mnist-autoencoder-webapp.netlify.app/)
 ---
 
 ## 👁️‍🗨️ Featured Project: AutoEncoder Lab (Premium Denoising & Reconstruction)
