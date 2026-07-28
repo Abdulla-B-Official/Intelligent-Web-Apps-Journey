@@ -2,6 +2,11 @@
 
 Welcome to my journey of exploring artificial intelligence and modern web development through practical projects. This repository contains a collection of intelligent web applications created for learning, experimentation, and implementation of AI/ML concepts.
 
+# AutoEncoder App
+
+## Live Demo
+
+https://your-netlify-url.netlify.app
 ---
 
 ## 👁️‍🗨️ Featured Project: AutoEncoder Lab (Premium Denoising & Reconstruction)
