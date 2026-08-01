@@ -1,4 +1,4 @@
-# Intelligent Web Apps Journey 🚀
+# Intelligent Web Apps Journey 
 
 Welcome to my journey of exploring artificial intelligence and modern web development through practical projects. This repository contains a collection of intelligent web applications created for learning, experimentation, and implementation of AI/ML concepts.
 
@@ -9,13 +9,13 @@ Welcome to my journey of exploring artificial intelligence and modern web develo
 https://mnist-autoencoder-webapp.netlify.app/
 ---
 
-## 👁️‍🗨️ Featured Project: AutoEncoder Lab (Premium Denoising & Reconstruction)
+## Featured Project: AutoEncoder Lab (Premium Denoising & Reconstruction)
 
 AutoEncoder Lab is a production-ready, interactive Deep Learning web application designed to demonstrate image compression and noise reduction using a convolutional autoencoder model trained on the MNIST handwritten digit dataset. 
 
 Built around the exact model architecture specified in `AutoEncoders_DL.ipynb`, the application is split into a **React 18 frontend** and a **Flask backend API**. It features custom canvas drawing inputs, real-time comparisons, before/after slider layers, metric calculations, and an interactive 2D latent space mapping viewer.
 
-### 🚀 Key Features
+### Key Features
 
 *   **Handwriting Canvas:** Draw a digit with brush/eraser sizing and full undo/redo capabilities. Downsamples drawings automatically to 28x28 grayscale tensors.
 *   **Drag & Drop Upload:** Browse or drop PNG/JPG/JPEG digit images for instant inference.
@@ -26,7 +26,7 @@ Built around the exact model architecture specified in `AutoEncoders_DL.ipynb`, 
 
 ---
 
-### 📂 Project Structure
+### Project Structure
 
 ```
 AutoEncoder-WebApp/
@@ -65,7 +65,7 @@ AutoEncoder-WebApp/
 
 ---
 
-### 💻 Running Locally
+### Running Locally
 
 #### 1. Prerequisites
 Ensure you have the following installed:
@@ -106,7 +106,7 @@ Ensure you have the following installed:
 
 ---
 
-### 🌐 Production Deployment
+### Production Deployment
 
 #### Frontend (Netlify)
 The project is configured for deployment to Netlify using the `netlify.toml` file in the root. 
@@ -127,7 +127,7 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
 
 ---
 
-### 🔌 API Documentation
+### API Documentation
 
 #### 1. Healthcheck
 *   **URL:** `GET /health`
@@ -178,14 +178,14 @@ Deploy the Flask API to any hosting provider (Heroku, Render, AWS, GCP, etc.).
 
 ---
 
-### 🛠️ Troubleshooting
+### Troubleshooting
 
 *   **API Offline indicator in Navbar:** Ensure your Flask server is running locally on port 5000. If you changed the port, update the address in `frontend/src/services/api.js` or define `VITE_API_URL` in a `.env` file.
 *   **Black/inverted reconstructions:** Ensure you draw inside the canvas using the brush tool (which draws with white strokes on a black background). Drawing black lines on a white canvas causes bad inputs.
 
 ---
 
-## 🎯 Purpose of Journey
+## Purpose of Journey
 
 The goal of this repository is to understand AI concepts, improve software development skills, and transform machine learning ideas into interactive web experiences.
 
